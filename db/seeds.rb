@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
 Workout.delete_all
 
 
@@ -17,4 +19,5 @@ workouts = [
     {exercise: "strength", description: "pulls ups", weight: 0, reps: 10, sets: 5, image:"https://i.ytimg.com/vi/FnWrvWZDJTo/maxresdefault.jpg"},
     {exercise: "strength", description: "deadlifts", weight: 100, reps: 5, sets: 8, image:"https://www.bodybuilding.com/fun/images/2015/how-to-deadlift-a-beginners-guide-graphics-1.jpg"}
 ]
-Workout.create!(workouts)
+Workout.create(workouts)
+User.create()
